@@ -2,7 +2,7 @@
 
 A fun spy game where players try to identify the spy among them.
 
-**Play at:** [spykim.vercel.app](https://spykim.vercel.app)
+**Play at:** [kimcasus.vercel.app](https://kimcasus.vercel.app/)
 
 ## About
 
