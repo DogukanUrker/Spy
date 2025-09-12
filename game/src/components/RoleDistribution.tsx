@@ -269,7 +269,7 @@ export function RoleDistribution() {
     return (
       <div className="min-h-screen flex items-center justify-center px-4">
         <Card className="w-full max-w-md">
-          <CardHeader className="text-center pb-4">
+          <CardHeader className="text-center pb-2">
             <CardTitle className="text-xl font-semibold">
               Oyun Sonuçları
             </CardTitle>
@@ -287,6 +287,18 @@ export function RoleDistribution() {
               </p>
             </div>
 
+            {/* Spies */}
+            {spyPlayers.length > 0 && (
+              <div className="text-center p-4 bg-muted rounded-lg">
+                <p className="text-xs text-muted-foreground uppercase tracking-wide mb-1">
+                  Casuslar
+                </p>
+                <p className="text-lg font-semibold break-words">
+                  {spyPlayers.map((spy) => `Oyuncu ${spy.playerId}`).join(", ")}
+                </p>
+              </div>
+            )}
+
             {/* Stats */}
             <div className="grid grid-cols-2 gap-4 text-center">
               <div>
@@ -298,23 +310,6 @@ export function RoleDistribution() {
                 <p className="text-xs text-muted-foreground">Casus</p>
               </div>
             </div>
-
-            {/* Spies */}
-            {spyPlayers.length > 0 && (
-              <div>
-                <p className="text-sm font-medium mb-2">Casuslar:</p>
-                <div className="flex flex-wrap gap-2">
-                  {spyPlayers.map((spy) => (
-                    <span
-                      key={spy.playerId}
-                      className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-destructive/10 text-destructive"
-                    >
-                      Oyuncu {spy.playerId}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            )}
 
             {/* Special Mode */}
             {activeSpecialMode && (
