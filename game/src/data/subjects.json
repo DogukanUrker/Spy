@@ -33,6 +33,7 @@
         "İstanbul",
         "Ankara",
         "İzmir",
+        "Balıkesir",
         "Antalya",
         "New York",
         "Los Angeles",
@@ -75,7 +76,8 @@
         "Kayak Merkezi",
         "Kamp Alanı",
         "Müze",
-        "Lunapark"
+        "Lunapark",
+        "Kuzey"
       ]
     },
     {
@@ -111,23 +113,25 @@
         "Friends",
         "The Office",
         "Breaking Bad",
+        "Better Call Saul",
         "Game of Thrones",
         "Stranger Things",
-        "Wednesday",
         "Squid Game",
-        "Money Heist",
+        "La casa de Papel",
         "Peaky Blinders",
         "Rick and Morty",
         "The Last of Us",
-        "House of the Dragon",
-        "Euphoria",
         "Succession",
-        "The Bear",
         "Gibi",
         "Leyla ile Mecnun",
         "Behzat Ç.",
-        "Aşk 101",
-        "Yargı"
+        "Çernobil",
+        "Dexter",
+        "Sherlock Holmes",
+        "The Simpsons",
+        "The Boys",
+        "The Walking Dead",
+        "Invincible"
       ]
     },
     {
@@ -139,21 +143,85 @@
         "CS2",
         "Minecraft",
         "Fortnite",
-        "GTA 5",
+        "GTA",
         "Among Us",
         "PUBG",
-        "Apex Legends",
-        "Overwatch",
         "Call of Duty",
         "FIFA",
         "Rocket League",
-        "Genshin Impact",
+        "Rainbow Six Siege",
         "Roblox",
         "The Sims",
         "Red Dead Redemption",
         "God of War",
         "Elden Ring",
-        "Hogwarts Legacy"
+        "Manhunt",
+        "Stardew Vallet"
+      ]
+    },
+    {
+      "id": "game_chracters",
+      "name": "Oyun Karakterleri",
+      "items": [
+        "Arthur Morgan",
+        "John Marston",
+        "Tommy Vercetti",
+        "CJ",
+        "Niko Bellic",
+        "Trevor",
+        "Franklin",
+        "Kratos",
+        "Aterus / Loki",
+        "Nathen Drake",
+        "Ellie",
+        "Joel",
+        "Mario",
+        "Zelda",
+        "Geralt",
+        "Yennefer",
+        "Triss",
+        "G-Man",
+        "Gordan Freeman",
+        "Steve",
+        "Alex",
+        "Doom Guy"
+      ]
+    },
+    {
+      "id": "gng",
+      "name": "Gang",
+      "items": [
+        "Doğukan Ürker",
+        "Metehan Şahin",
+        "Memo",
+        "Doruk P",
+        "Ata Özgül",
+        "Ersanefe",
+        "Ahmet Bul",
+        "Efe Çakır",
+        "Yusuf Hilmi",
+        "İlker",
+        "Önder",
+        "Kaan Enser",
+        "Dolla",
+        "Ege Türkmen"
+      ]
+    },
+    {
+      "id": "lightcore_mix",
+      "name": "Lightcore Mix",
+      "items": [
+        "Ay",
+        "Mars",
+        "Uluslar Arası Uzay İstasyonu",
+        "Asansör",
+        "Kuzey",
+        "Nükleer Santrel",
+        "Doğukan Meme Company (DMC)",
+        "Celal Toraman",
+        "Arena GYM",
+        "McDonald's",
+        "Burhaniye Anadolu Lisesi"
       ]
     },
     {
@@ -171,7 +239,6 @@
         "Laboratuvar",
         "Spor Kompleksi",
         "Öğrenci Kulüpleri Odası",
-        "Arka Bahçe",
         "Otopark",
         "Konferans Salonu",
         "Bilgisayar Odası",
@@ -192,8 +259,8 @@
         "Döner",
         "Lahmacun",
         "Pasta",
-        "Tavuk Döner",
-        "Adana Kebap",
+        "Tantuni",
+        "Kebap",
         "İskender",
         "Mantı",
         "Köfte",
@@ -212,16 +279,12 @@
       "id": "foreign_celebrities",
       "name": "Yabancı Ünlüler",
       "items": [
-        "Taylor Swift",
         "Drake",
         "The Weeknd",
         "Billie Eilish",
         "Ariana Grande",
         "Travis Scott",
         "Dua Lipa",
-        "Harry Styles",
-        "Olivia Rodrigo",
-        "Doja Cat",
         "Zendaya",
         "Tom Holland",
         "Timothée Chalamet",
@@ -243,7 +306,6 @@
         "Hadise",
         "Aleyna Tilki",
         "Sefo",
-        "Mero",
         "Lvbel C5",
         "Murda",
         "UZI",
@@ -256,8 +318,10 @@
         "Enes Batur",
         "Orkun Işıtmak",
         "Danla Bilic",
-        "Duygu Özaslan",
-        "Reynmen"
+        "Ati242",
+        "Reynmen",
+        "Erdoğan",
+        "Akbaba"
       ]
     },
     {
@@ -283,7 +347,8 @@
         "Baykuş",
         "Papağan",
         "Flamingo",
-        "Tavus Kuşu"
+        "Tavus Kuşu",
+        "Akbaba"
       ]
     },
     {
@@ -309,7 +374,8 @@
         "Xbox",
         "Discord",
         "Tesla",
-        "Mercedes"
+        "Mercedes",
+        "Viero Deluxe"
       ]
     }
   ]
