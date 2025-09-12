@@ -16,8 +16,9 @@ export const metadata: Metadata = {
   title: "Casus Kim?",
   description:
     "Casus Kim? - Arkadaşlarınızla oynayabileceğiniz eğlenceli casus oyunu",
-  icons: {
-    icon: "data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🕵️</text></svg>",
+  other: {
+    "apple-mobile-web-app-capable": "yes",
+    "apple-mobile-web-app-status-bar-style": "black-translucent",
   },
 };
 
@@ -28,6 +29,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="tr" className="dark">
+      <head>
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="manifest" href="/site.webmanifest" />
+        <meta name="apple-mobile-web-app-title" content="Casus Kim?" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen bg-background`}
       >
