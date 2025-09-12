@@ -178,7 +178,7 @@ export function HomeScreen() {
             <CardHeader>
               <CardTitle className="text-lg">Özel Modlar</CardTitle>
               <p className="text-sm text-muted-foreground">
-                Bu modlar açık olduğunda %5 ihtimalle etkinleşir
+                Bu modlar açık olduğunda %10 ihtimalle etkinleşir
               </p>
             </CardHeader>
             <CardContent className="space-y-4">

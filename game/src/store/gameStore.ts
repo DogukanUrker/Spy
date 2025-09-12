@@ -104,33 +104,40 @@ export const useGameStore = create<GameStore>()(
         const answerIndex = getSecureRandom(locationsToUse.length);
         const selectedAnswer = locationsToUse[answerIndex];
 
-        // Check for special modes (5% chance each)
-        const everyoneIsSpyChance = settings.everyoneIsSpy
-          ? getRandomPercentage()
-          : 100;
-        const everyoneKnowsChance = settings.everyoneKnows
-          ? getRandomPercentage()
-          : 100;
-        const everyoneDifferentChance = settings.everyoneDifferent
-          ? getRandomPercentage()
-          : 100;
+        // Check for special modes (10% chance each)
+        const enabledModes: string[] = [];
 
-        const specialEveryoneIsSpy = everyoneIsSpyChance < 5;
-        const specialEveryoneKnows = everyoneKnowsChance < 5;
-        const specialEveryoneDifferent = everyoneDifferentChance < 5;
+        // Check each enabled special mode independently (10% chance each)
+        if (settings.everyoneIsSpy && getRandomPercentage() < 10) {
+          enabledModes.push("everyone-spy");
+        }
+        if (settings.everyoneKnows && getRandomPercentage() < 10) {
+          enabledModes.push("everyone-knows");
+        }
+        if (settings.everyoneDifferent && getRandomPercentage() < 10) {
+          enabledModes.push("everyone-different");
+        }
 
+        // If multiple modes triggered, pick one randomly
         let activeSpecialMode:
           | "everyone-spy"
           | "everyone-knows"
           | "everyone-different"
           | null = null;
-        if (specialEveryoneIsSpy) {
-          activeSpecialMode = "everyone-spy";
-        } else if (specialEveryoneKnows) {
-          activeSpecialMode = "everyone-knows";
-        } else if (specialEveryoneDifferent) {
-          activeSpecialMode = "everyone-different";
+
+        if (enabledModes.length > 0) {
+          const randomModeIndex = getSecureRandom(enabledModes.length);
+          activeSpecialMode = enabledModes[randomModeIndex] as
+            | "everyone-spy"
+            | "everyone-knows"
+            | "everyone-different";
         }
+
+        // Set individual flags for role generation logic
+        const specialEveryoneIsSpy = activeSpecialMode === "everyone-spy";
+        const specialEveryoneKnows = activeSpecialMode === "everyone-knows";
+        const specialEveryoneDifferent =
+          activeSpecialMode === "everyone-different";
 
         // Generate player roles
         const players: PlayerRole[] = [];
