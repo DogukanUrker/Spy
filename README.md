@@ -13,7 +13,7 @@ This is a party game I built to play with my friends, which is why the UI is in 
 - Custom word lists
 - Configurable player/spy counts
 - Special game modes
-- Mobile-friendly
+- Mobile-first UI
 
 ## Tech Stack
 
