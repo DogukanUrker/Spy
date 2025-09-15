@@ -104,17 +104,17 @@ export const useGameStore = create<GameStore>()(
         const answerIndex = getSecureRandom(locationsToUse.length);
         const selectedAnswer = locationsToUse[answerIndex];
 
-        // Check for special modes (10% chance each)
+        // Check for special modes (5% chance each)
         const enabledModes: string[] = [];
 
-        // Check each enabled special mode independently (10% chance each)
-        if (settings.everyoneIsSpy && getRandomPercentage() < 10) {
+        // Check each enabled special mode independently (5% chance each)
+        if (settings.everyoneIsSpy && getRandomPercentage() < 5) {
           enabledModes.push("everyone-spy");
         }
-        if (settings.everyoneKnows && getRandomPercentage() < 10) {
+        if (settings.everyoneKnows && getRandomPercentage() < 5) {
           enabledModes.push("everyone-knows");
         }
-        if (settings.everyoneDifferent && getRandomPercentage() < 10) {
+        if (settings.everyoneDifferent && getRandomPercentage() < 5) {
           enabledModes.push("everyone-different");
         }
 
